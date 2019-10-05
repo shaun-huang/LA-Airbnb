@@ -1,0 +1,32 @@
+h1 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+label {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.text-center {
+    background-color: white;
+}
+
+.well {
+    background-color: white;
+    border: 
+}
+
+.btn-light {
+    background-color: crimson;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+/*.btn-primary:hoover {
+
+}

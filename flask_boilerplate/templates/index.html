@@ -7,50 +7,53 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LA BnB</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>LA AirBnB</h1>
-        <p>Lets find the AirBnB ratings in Los Angeles!</p>
-        <div class="col-md-4">
-          <div class="well">
-            <h5>Zip Code:</h5>
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+<body background="plotly-latest.min.jpg">
+  <section>
+    <!-- Container will have drop down to select Zip Code, City, and Rating. It will also contain text-->
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-md-12 jumbotron text-center">
+          <h1>LA AirBnB</h1>
+          <p>Lets find the AirBnB ratings in Los Angeles!</p>
+          <br>
+          <div class="col-md-4">
+            <div class="well">
+              <label>Zip Code:</label>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="well">
-            <h5>City:</h5>
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <div class="col-md-4">
+            <div class="well">
+              <label>City:</label>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="well">
-            <h5>Rating:</h5>
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <div class="col-md-4">
+            <div class="well">
+              <label>Rating:</label>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+          </div>
+            <button type="button" class="btn btn-light">Search</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-5">
-        <div id="bar"></div>
+  </section>
+  <div class="main">
+      <section id="section2">
+         <div class="container jumbo">
+            <div class="jumbotron">
+               <h2>Let Big Data Change the Game</h2>
+               <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.</p>
+               <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+            </div>
+      </section>
       </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
-
+   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>
