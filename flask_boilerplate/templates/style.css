@@ -49,6 +49,19 @@ h2 {
     height: 100%;
     z-index: -10;
 }
-/*.btn-primary:hoover {
 
+.ct-btn-scroll {
+    width: 49px;
+    height: 20px;
+    position: absolute; 
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.60s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
 }

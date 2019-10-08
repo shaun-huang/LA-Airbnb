@@ -11,54 +11,55 @@
 </head>
 
 <body>
-  <section>
-    <!-- Container will have drop down to select Zip Code, City, and Rating. It will also contain text-->
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>LA AirBnB</h1>
-          <p>Lets find the AirBnB ratings in Los Angeles!</p>
-          <br>
-          <div class="col-md-4">
-            <div class="well">
-              <label>Zip Code:</label>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+  <div class="main">
+    <section class="company-heading intro-type" id="parallax-one">
+
+      <!-- Container will have drop down to select Zip Code, City, and Rating. It will also contain text-->
+
+      <div class="container" style="min-height: 700px;">
+        <div class="row product-title-info">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>LA AirBnB</h1>
+            <p>Lets find the AirBnB ratings in Los Angeles!</p>
+            <br>
+            <div class="col-md-4">
+              <div class="well">
+                <label>Zip Code:</label>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="well">
-              <label>City:</label>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            <div class="col-md-4">
+              <div class="well">
+                <label>City:</label>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="well">
-              <label>Rating:</label>
-              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            <div class="col-md-4">
+              <div class="well">
+                <label>Rating:</label>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
             </div>
-          </div>
-            <button type="button" class="btn btn-light">Search</button>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><button type="button" class="btn btn-light">Search</button></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="parallax" id="parallax-cta" style="background-image:url(https://skift.com/wp-content/uploads/2018/10/london-airbnb-living-room-e1539104712815.jpg);">
-      &nbsp
-    </div>
-  </section>
+      <div class="parallax" id="parallax-cta" style="background-image:url(https://skift.com/wp-content/uploads/2018/10/london-airbnb-living-room-e1539104712815.jpg);">
+      </div>
+    </section>
+  </div>
 
 
 
-  <div class="main">
+  <div class="main" style="min-height: 700px;">
       <section id="section2">
-         <div class="container jumbo">
-            <!--<div class="jumbotron">-->
-               <h2>Here we will display charts and other visual information</h2>
-               <p>WebCorpCo is all about making sure your marketing stack is in 
-                 alignment with your company as well as the customers you serve. 
-                 There is no 'one size fits all' approach to marketing. Every business 
-                 is unique, customers are unique, and your marketing should be as well.</p>
-            <!--</div>-->
+        <div class="row">
+          <div class="col-md-12">
+            <p>Text here</p>
+          </div>
+        </div>
+         <p>This is where our information will live</p>
       </section>
       </div>
    </div>
