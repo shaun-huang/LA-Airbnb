@@ -30,7 +30,7 @@
             </div>
             <div class="col-md-4">
               <div class="well">
-                <label>City:</label>
+                <label>Neighborhood:</label>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
               </div>
             </div>
@@ -40,7 +40,9 @@
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
               </div>
             </div>
-            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><button type="button" class="btn btn-light">Search</button></a>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2">
+              <button type="button" class="btn btn-light">Search</button>
+            </a>
             </div>
           </div>
         </div>
@@ -55,8 +57,16 @@
   <div class="main" style="min-height: 700px;">
       <section id="section2">
         <div class="row">
-          <div class="col-md-12">
-            <p>Text here</p>
+          <div class="col-md-6">
+            <p>Title: Chart1</p>
+          </div>
+          <div class="col-md-6">
+            <p>Title: Chart2</p>
+          </div>
+        </div>
+
+          <div class="clo-md-10">
+            <p>Title: Chart3</p>
           </div>
         </div>
          <p>This is where our information will live</p>
@@ -65,8 +75,9 @@
    </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
+  <script src="Test.js"></script>
 
 </body>
 
