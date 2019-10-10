@@ -22,3 +22,23 @@ file_path = '../Data/clean_data.csv'
 def loadJson():
     jsondata = pd.read_csv(file_path).to_json(orient="records")
     return json.loads(jsondata)
+
+city_file_path = "../Data/city_count.csv"
+def loadcity():
+    citydata = pd.read_csv(city_file_path).to_json(orient="records")
+    return json.loads(citydata)
+
+score_file_path = "../Data/score_df.csv"
+def loadscore():
+    scoredata = pd.read_csv(score_file_path).to_json(orient="records")
+    return json.loads(scoredata)
+
+listing_file_path = "../Data/host_df.csv"
+def loadlist():
+    listdata = pd.read_csv(listing_file_path).to_json(orient="records")
+    return json.loads(listdata)
+
+property_file_path = "../Data/Property_type.csv"
+def loadproperty():
+    propertydata = pd.read_csv(property_file_path).to_json(orient="records")
+    return json.loads(propertydata)

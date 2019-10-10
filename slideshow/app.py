@@ -28,6 +28,29 @@ def json():
     json = jsonify(data)
     return json
 
+@app.route("/city")
+def city():
+    data2 = db.loadcity()
+    json2 = jsonify(data2)
+    return json2
+
+@app.route("/score")
+def score():
+    data3 = db.loadscore()
+    json3 = jsonify(data3)
+    return json3
+@app.route("/listing")
+def listing():
+    data4 = db.loadlist()
+    json4 = jsonify(data4)
+    return json4
+
+@app.route("/property")
+def propertyType():
+    data5 = db.loadproperty()
+    json5 = jsonify(data5)
+    return json5
+
 
 if __name__ == '__main__':
     app.run(debug=True)
