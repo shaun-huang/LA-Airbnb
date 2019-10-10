@@ -17,7 +17,7 @@ label {
 
 .well {
     background-color: white;
-    border: 
+    border: none;
 }
 
 .btn-light {
@@ -27,6 +27,13 @@ label {
     color: white;
 }
 
-/*.btn-primary:hoover {
+body {
+  padding: 0;
+  margin: 0;
+}
 
+#map,
+body,
+html {
+  height: 100%;
 }
