@@ -1,0 +1,13 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  fill: #ff5a60;
+}
+
+.bar:hover {
+  fill: gray;
+}
