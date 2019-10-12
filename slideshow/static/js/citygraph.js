@@ -58,7 +58,12 @@ function citygraph(){
 
     chartGroup.append("g")
       .attr("transform", `translate(0, ${chartHeight})`)
-      .call(bottomAxis);
+      .call(bottomAxis)
+      .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform","rotate(-65)");
 
     // Create one SVG rectangle per piece of tvData
     // Use the linear and band scales to position each rectangle within the chart
@@ -159,6 +164,7 @@ function citybar(){
       .data(scoreData)
       .enter()
       .append("circle")
+      .style("fill","#ff5a60")
       .attr("r", d => d.number_of_reviews / 10)
       .attr("cx", d => xLinearScale(d.population))
       .attr("cy", d => yLinearScale(d.review_scores_rating))
@@ -167,6 +173,22 @@ function citybar(){
 
 
   });
+
+  // append y axis
+  chartGroup.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - chartMargin.left)
+  .attr("x", 0 - (chartHeight / 2))
+  .attr("dy", "1em")
+  .classed("axis-text", true)
+  .text("Review Score");
+  // append x axis
+  chartGroup.append("text")
+  .attr("x", (chartWidth/2))
+  .attr("y", chartHeight+40)
+  .classed("active", true)
+  .text("Population");
+
 
 };
 
@@ -184,7 +206,7 @@ function listing(){
   d3.json("/listing", function(error, hostData) {
     if (error) throw error;
 
-    console.log(hostData);
+    console.log('listing');
 
     // Cast the hours value to a number for each piece of tvData
     hostData.forEach(function(d) {
@@ -227,6 +249,21 @@ function listing(){
       .attr("y", d => yLinearScale(d.host_since))
       .attr("width", xBandScale.bandwidth())
       .attr("height", d => chartHeight - yLinearScale(d.host_since));
+    
+    // append y axis
+    chartGroup.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - chartMargin.left)
+    .attr("x", 0 - (chartHeight / 2))
+    .attr("dy", "1em")
+    .classed("axis-text", true)
+    .text("Listing Count");
+    // append x axis
+    chartGroup.append("text")
+    .attr("x", (chartWidth/2))
+    .attr("y", chartHeight+40)
+    .classed("active", true)
+    .text("Years");
 
   });
 };
@@ -289,6 +326,21 @@ function property(){
       .attr("height", d => chartHeight - yLinearScale(d.property_type));
 
   });
+  // append y axis
+  chartGroup.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - chartMargin.left)
+  .attr("x", 0 - (chartHeight / 2))
+  .attr("dy", "1em")
+  .classed("axis-text", true)
+  .text("Review Rating");
+  // append x axis
+  chartGroup.append("text")
+  .attr("x", (chartWidth/2))
+  .attr("y", chartHeight+40)
+  .classed("active", true)
+  .text("Property Type");
+
 
 };
 
@@ -375,16 +427,32 @@ function house(){
   };
 
 
-    chartGroup.selectAll("dot")
-      .data(scoreData)
-      .enter()
-      .append("circle")
-      .attr("r", d => d.number_of_reviews / 10)
-      .attr("cx", d => xLinearScale(d.house_price))
-      .attr("cy", d => yLinearScale(d.review_scores_rating))
-      .on("mouseover", tipMouseover)
-      .on("mouseout", tipMouseout);
+  chartGroup.selectAll("dot")
+    .data(scoreData)
+    .enter()
+    .append("circle")
+    .style("fill","#ff5a60")
+    .attr("r", d => d.number_of_reviews / 10)
+    .attr("cx", d => xLinearScale(d.house_price))
+    .attr("cy", d => yLinearScale(d.review_scores_rating))
+    .on("mouseover", tipMouseover)
+    .on("mouseout", tipMouseout);
 
+  // append y axis
+  chartGroup.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - chartMargin.left)
+  .attr("x", 0 - (chartHeight / 2))
+  .attr("dy", "1em")
+  .classed("axis-text", true)
+  .text("Review Rating");
+  // append x axis
+  chartGroup.append("text")
+  .attr("x", (chartWidth/2))
+  .attr("y", chartHeight+40)
+  .classed("active", true)
+  .text("House Value");
+  
 
   });
 };
@@ -584,7 +652,7 @@ function chart(){
               .classed("active", true)
               .classed("inactive", false);
           }
-        }
+        };
       });
   });
 }
