@@ -42,3 +42,8 @@ property_file_path = "../Data/Property_type.csv"
 def loadproperty():
     propertydata = pd.read_csv(property_file_path).to_json(orient="records")
     return json.loads(propertydata)
+
+house_file_path = "../Data/house_price.csv"
+def loadhouse():
+    housedata = pd.read_csv(house_file_path).to_json(orient="records")
+    return json.loads(housedata)

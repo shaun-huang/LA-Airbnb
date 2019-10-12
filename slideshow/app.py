@@ -51,6 +51,13 @@ def propertyType():
     json5 = jsonify(data5)
     return json5
 
+@app.route("/house")
+def house():
+    data6 = db.loadhouse()
+    json6 = jsonify(data6)
+    return json6
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
