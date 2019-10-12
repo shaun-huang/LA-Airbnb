@@ -52,3 +52,13 @@ chart_file_path = "../Data/pricetype.csv"
 def loadchart():
     chartdata = pd.read_csv(chart_file_path).to_json(orient="records")
     return json.loads(chartdata)
+
+filtered_file_path = "../Data/filteredprice.csv"
+def loadfilter():
+    filtereddata = pd.read_csv(filtered_file_path).to_json(orient="records")
+    return json.loads(filtereddata)
+
+price_file_path = "../Data/price.csv"
+def loadprice():
+    pricedata = pd.read_csv(price_file_path).to_json(orient="records")
+    return json.loads(pricedata)

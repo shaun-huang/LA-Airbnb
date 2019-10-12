@@ -3,7 +3,7 @@ console.log("in logic:");
 // Creating map object
 var myMap = L.map("map", {
   center: [34.0522,-118.2437],
-  zoom: 11
+  zoom: 10
 });
 
 // Adding tile layer to the map

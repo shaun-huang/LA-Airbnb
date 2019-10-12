@@ -67,21 +67,20 @@
   </head>
   <body>
     <header role="banner">
-      <nav role="navigation">
-        <p class="logo"><a href="index.html" title="WebSlides"></a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/shaun-huang/LA-Airbnb" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
-        </ul>
-      </nav>
-    </header>
+        <nav role="navigation">
+          <p class="logo"><a href="index.html" title="WebSlides"></a></p>
+          <ul>
+            <li class="github">
+              <a rel="external" href="https://github.com/shaun-huang/LA-Airbnb" title="Github">
+                <svg class="fa-github">
+                  <use xlink:href="#fa-github"></use>
+                </svg>
+                <em>WebSlides</em>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 ​
     <main role="main">
       <article id="webslides" class="vertical">
@@ -91,27 +90,40 @@
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
 ​
-        <section>
-         <span class="background" style="background-image:url('https://webslides.tv/static/images/nature.jpg')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1 style="color:#ff5a60"><strong>Two Tigers Presents: Los Angeles Airbnb Analysis</strong></h1>
-            <p class="text-intro">Two Tigers consists of: Shaun, Jay, Anaisa, and Nehemias<br>
-            </p>
-            <p>
-            </p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
+        
+      <section>
+      <span class="background" style="background-image:url('https://livingtoroam.com/wp-content/uploads/couch-dark.jpg')"></span>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <div class="top-left"><h1 style="color:#ff5a60"><strong>Two Tigers Presents: Los Angeles Airbnb Analysis</strong></h1></div>
+          <p class="text-intro" style="color:#ff5a60">Two Tigers consists of: Shaun, Jay, Anaisa, and Nehemias<br>
+          </p>
+          <p>
+          </p>
+        </div>
+      <!-- .end .wrap -->
+      </section>
         <section>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50 aligncenter">
+            <p><strong>Our dataset has over 22K listings just In LA County spanning from 2008-2017</strong></p>
             <h2 style="color:#ff5a60"><strong>Hypothesis</strong></h2>
             <div class="bg-white shadow">
               <ul class="flexblock reasons">
                 <li>
-                  <h2>Work better, faster.</h2>
-                  <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="demos/index.html" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
+                  <h2>How are scores rated across neighborhoods? Is there a correlation?</h2>
+                  <p>How are scores rated across neighborhoods? Is there a correlation? 
+                    Do more expensively priced airbnb hosts have bad or good scores? 
+                  </p>
+                </li>
+                <li>
+                  <h2>How Popular has Airbnb become in LA & what are the product offerings?</h2>
+                  <p>Tracking # of hosts increase over time & product offering types
+                      </p>
+                </li>
+                <li>
+                  <h2>Where is the best area to invest in for income stream? (most amount of people visiting)</h2>
+  
                 </li>
               </ul>
             </div>
@@ -123,11 +135,9 @@
           <div class="wrap">
             <div class="onethird">
               <h2 style="color:#ff5a60"><strong>LA Airbnb GeoMap</strong></h2>
-              <li class="text-intro">This is our first bulleton</li>
-              <li class="text-intro">This is our second bulleton</li>
             </div>
             <ul class="flexblock features">
-              <iframe src= "/map" style = "position: relative; top: 0; left: 250px;" height = "1000" width="1000">
+              <iframe src= "/map" style = "position: relative; top: 0; left: 150px;" height = "1000" width="1500">
               </iframe>
         </section>
         <section >
@@ -167,13 +177,32 @@
             <div class="wrap">
               <div class="grid vertical-align">
                 <div class="onethird">
-                  <h3 style="color:#ff5a60"><strong>Housing Price VS. Review Scores</strong></h3>
-                  <li class="text-intro">We looked at  </li>
-                  <li class="text-intro">Bulletpoint 2  </li>
+                  <h3 style="color:#ff5a60"><strong>Housing Price VS. Review</strong></h3>
+                  <li class="text-intro">We found a correlation between rating score vs price</li>
+                  <li class="text-intro">The number of reviews vs review scores was inconclusive to our hypothesis</li>
                 </div>
                 <!-- .end .column -->
                 <div class="twothird">
                     <div id = 'house'></div>
+                </div>
+                <!-- .end .column -->
+              </div>
+              <!-- .end .grid -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="grid vertical-align">
+                <div class="onethird">
+                  <h3 style="color:#ff5a60"><strong>Housing Price VS. Listing Price</strong></h3>
+                  <li class="text-intro">We looked at the relationship between housing price and listing price</li>
+                  <li class="text-intro">The listing price and housing price are significantly correlated based on the scatterplot</li>
+                </div>
+                <!-- .end .column -->
+                <div class="twothird">
+                    <div id = 'price'></div>
                 </div>
                 <!-- .end .column -->
               </div>
@@ -205,11 +234,12 @@
         </section>
         <section class="slide-bottom">
           <div class="wrap">
-            <div class="content-right text-serif">
-              <h2 style="color:#ff5a60">
-                <strong>Thanks.</strong>
-                  <a><img scr="Goodpic.jpeg"/></a>
-              </h2>
+              <div>
+                  <iframe width="960" height="680" src="https://www.youtube.com/embed/-XSAqfK_UwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="https://i.ibb.co/RY30P11/Goodpic.jpg" height="900" width="900">
+                <h2 style="color:#ff5a60">
+                  <strong>Thanks.</strong></h2>
+              </div>
             </div>
             <!-- .end .content-right -->
           </div>

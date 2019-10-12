@@ -63,6 +63,17 @@ def chart():
     json7 = jsonify(data7)
     return json7
 
+@app.route("/price")
+def price():
+    data8 = db.loadprice()
+    json8 = jsonify(data8)
+    return json8
+
+@app.route("/filter")
+def filterprice():
+    data9 = db.loadfilter()
+    json9 = jsonify(data9)
+    return json9
 
 if __name__ == '__main__':
     app.run(debug=True)
