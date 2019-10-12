@@ -81,8 +81,8 @@ var tooltip = d3.select("body").append("div")
 var tipMouseover = function(d) {
 var html  = "<span>" + d.neighbourhood + "</span><br/>"
 tooltip.html(html)
-.style("left", (d3.event.pageX - 34) + "px")
-.style("top", (d3.event.pageY - 12) + "px")
+  .style("left", (d3.event.pageX - 34) + "px")
+  .style("top", (d3.event.pageY - 12) + "px")
 .transition()
     .duration(200) // ms
     .style("opacity", .9) // started as 0!
@@ -95,7 +95,7 @@ tooltip.transition()
 };
 
 
-  chartGroup.selectAll("dot")
+  chartGroup.selectAll("scatter-dots")
     .data(scoreData)
     .enter()
     .append("circle")
