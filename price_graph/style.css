@@ -1,0 +1,18 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.dots {
+  fill: #ff5a60;
+}
+
+.bar:hover {
+  fill: gray;
+}
+
+.inactive.hover {
+  fill: #ff5a60
+  cursor: pointer;
+}
