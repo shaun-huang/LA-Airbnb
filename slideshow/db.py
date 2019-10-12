@@ -47,3 +47,8 @@ house_file_path = "../Data/house_price.csv"
 def loadhouse():
     housedata = pd.read_csv(house_file_path).to_json(orient="records")
     return json.loads(housedata)
+
+chart_file_path = "../Data/pricetype.csv"
+def loadchart():
+    chartdata = pd.read_csv(chart_file_path).to_json(orient="records")
+    return json.loads(chartdata)

@@ -34,6 +34,7 @@
 
     <!-- D3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <!-- FACEBOOK -->
     <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
     <meta property="og:type" content="article">
@@ -142,26 +143,14 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap">
             <div class="grid vertical-align">
-              <div class="column">
-                <h3><strong>WebSlides is really easy</strong></h3>
-                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
-                <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so fast</strong>.</p>
+              <div class="onethird">
+                <h3><strong>Title</strong></h3>
+                <li class="text-intro">Bulletpoint 1 <code>&lt;section&gt;</code> </li>
+                <li class="text-intro">Bulletpoint 2<code>&lt;section&gt;</code> </li>
               </div>
               <!-- .end .column -->
-              <div class="column">
-                <pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
+              <div class="twothird">
+                  <div id = 'house'></div>
               </div>
               <!-- .end .column -->
             </div>
@@ -199,7 +188,7 @@
         <section class="aligncenter">
           <!-- .wrap = container (width: 90%) -->
           <div class="wrap">
-              <div id = "house" ></div>
+              <div id= 'chart'></div>
           </div>
           <!-- .end .wrap -->
         </section>

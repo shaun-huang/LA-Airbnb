@@ -57,6 +57,11 @@ def house():
     json6 = jsonify(data6)
     return json6
 
+@app.route("/chart")
+def chart():
+    data7 = db.loadchart()
+    json7 = jsonify(data7)
+    return json7
 
 
 if __name__ == '__main__':
