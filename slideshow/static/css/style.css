@@ -16,3 +16,7 @@ html {
 .bar:hover {
   fill: green;
 }
+
+h1 {
+  color: LightCoral;
+}
